@@ -1,0 +1,133 @@
+* {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(50, 50, 50, 0.6);
+  padding: 0;
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+
+img {
+  background: no-repeat top right fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#weather {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#time > span:first-child {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+#time > span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 5px;
+  font-size: 70px;
+  font-weight: bolder;
+  width: 282px;
+}
+
+#login-form > input {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 3px;
+  text-align: center;
+}
+#login-form > input::placeholder {
+  color: white;
+  font-weight: lighter;
+  text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.6);
+  text-align: center;
+}
+.greeting {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-weight: bolder;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+#todo-form > input {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin: 10px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  width: 145px;
+  padding-bottom: 2px;
+}
+#todo-form > input::placeholder {
+  color: white;
+  font-weight: lighter;
+  font-size: 17px;
+  text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.6);
+  text-align: center;
+}
+#todo-list {
+  position: absolute;
+  top: 66%;
+  left: calc(50% + 115px);
+}
+li {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  list-style: decimal;
+  text-shadow: 3px 3px 6px rgb(50, 50, 50);
+  font-size: 25px;
+}
+li:hover .hidden {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+}
+li > span {
+  text-shadow: 3px 3px 6px rgb(50, 50, 50);
+}
+
+@media (max-height: 450px) {
+  #time > span:last-child {
+    top: 225px;
+  }
+
+  #login-form > input {
+    top: 270px;
+  }
+  .greeting {
+    top: 270px;
+  }
+  #todo-form > input {
+    top: 292.5px;
+  }
+  #todo-list {
+    top: 292.5px;
+  }
+}
