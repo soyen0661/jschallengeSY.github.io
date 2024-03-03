@@ -95,6 +95,7 @@ img {
   position: absolute;
   top: 66%;
   left: calc(50% + 115px);
+  padding-right: 10px;
 }
 li {
   font-family: "Nanum Pen Script", cursive;
